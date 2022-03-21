@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+    <head>
+        <meta name="color-scheme" content="light dark">
+        <meta name="supported-color-schemes" content="light dark">
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="x-apple-disable-message-reformatting">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+         <!-- Character encoding -->
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+         <!-- Set 100% scale, allow zoom -->
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+         <!-- Remove default blue colour from links so you can style your own -->
+         <meta name="format-detection" content="address=no">
+         <meta name="format-detection" content="date=no">
+         <meta name="format-detection" content="email=no">
+         <meta name="format-detection" content="telephone=no">
+         <meta name="x-apple-disable-message-reformatting">
+ 
+         <!-- Prevent iOS 11 from automatically scaling your email -->
+         <meta name="x-apple-disable-message-reformatting">
+ 
+         <!-- Enable CSS3 and media queries in Windows Phone 7.5 and higher -->
+         <!--[if !mso]><!-->
+         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+         <!--<![endif]-->
+        
+        <!--[if mso]>
+            <style type="text/css">
+                *, a, p, h1, h2, h3, td {font-family: Arial, sans-serif !important;}
+                table {border-collapse: collapse;}
+                a {color: #ff444f; font-family: Arial, sans-serif;}
+            </style>
+        <![endif]-->
+        <style type="text/css">
+            /* FONTS */
+            @media screen {
+                /* latin */
+                @font-face {
+                font-family: 'IBM Plex Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: local('IBM Plex Sans'), local('IBMPlexSans'), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYXgKVElMYYaJe8bpLHnCwDKhdHeFaxOedc.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                }
+                /* latin */
+                @font-face {
+                font-family: 'IBM Plex Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: local('IBM Plex Sans Medium'), local('IBMPlexSans-Medium'), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIFsdP3pBms.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                }
+                /* latin */
+                @font-face {
+                font-family: 'IBM Plex Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: local('IBM Plex Sans Bold'), local('IBMPlexSans-Bold'), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFsdP3pBms.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                }
+            }
+            /* CLIENT-SPECIFIC STYLES */
+            body, table, td, a {
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+            }
+            table, td {
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
+            }
+            img {
+                -ms-interpolation-mode: bicubic;
+            }
+            /* RESET STYLES */
+            img {
+                border: 0;
+                height: auto;
+                line-height: 100%;
+                outline: none;
+                text-decoration: none;
+            }
+            table {
+                border-collapse: collapse !important;
+            }
+            body {
+                height: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                width: 100% !important;
+                font-family: 'IBM Plex Sans', Arial, sans-serif;
+            }
+            /* iOS BLUE LINKS */
+            a[x-apple-data-detectors] {
+                color: inherit !important;
+                text-decoration: none !important;
+                font-size: inherit !important;
+                font-family: inherit !important;
+                font-weight: inherit !important;
+                line-height: inherit !important;
+            }
+            /* ANDROID CENTER FIX */
+            div[style*="margin: 16px 0;"] {
+                margin: 0 !important;
+            }
+
+            a, a:visited {
+                color: #029BFE;
+                text-decoration: none;
+            }
+            a:hover {text-decoration: underline;}
+            a.button {
+                text-decoration: none;
+                text-align: center;
+                line-height: 20px;
+                padding: 10px 16px;
+                display: inline-block;
+                font-weight: bold;
+                font-family: 'IBM Plex Sans', Arial, sans-serif; 
+                font-size: 14px;
+                border-radius: 20px;
+                overflow: visible;
+                border: 0;
+                color: #ffffff;
+                background: #029BFE;
+                min-width: 150px;
+            }
+            .button:hover {
+                background-color: #0277c5;
+            }
+            a.button-secondary {
+                text-decoration: none;
+                text-align: center;
+                line-height: 20px;
+                padding: 8px 14px;
+                display: inline-block;
+                font-weight: bold;
+                font-family: 'IBM Plex Sans', Arial, sans-serif; 
+                font-size: 14px;
+                border-radius: 20px;
+                overflow: visible;
+                border: 0;
+                color: #029BFE;
+                border: 2px solid #029BFE;
+                background: transparent;
+                min-width: 150px;
+            }
+            .button-secondary:hover {
+                border: 2px solid #0277c5;
+                color: #0277c5;
+            }
+            h1 {
+                font-family: 'IBM Plex Sans', Arial, sans-serif;
+                font-size: 48px;
+                line-height: 60px;
+                font-weight: bold;
+                margin: 0;
+            }
+            h2 {
+                font-size: 32px;
+                line-height: 40px;
+                margin: 0;
+            }
+            .justify-word {
+                text-align: justify;
+                text-justify: inter-word;
+            }
+                        
+            @media screen and (max-width: 590px)  {
+                .button, .button-secondary {
+                    margin: 5px 0 !important;
+                }
+            }
+            /* MOBILE STYLES */
+            @media screen and (max-width: 620px) {
+                .img-max {
+                    width: 100% !important;
+                    max-width: 100% !important;
+                    height: auto !important;
+                }
+                .max-width {
+                    max-width: 100% !important;
+                }
+                .mobile-wrapper {
+                    width: 100% !important;
+                    max-width: 100% !important;
+                }
+                .mb-width{
+                    width: 75% !important;
+                }
+                .mb-lowwidth{
+                    width: 70px !important; 
+                }
+                .mobile-visible {
+                    display:inline-block !important;
+                }
+                .mobile-hide {
+                    display:none !important;
+                }
+                .mobile-nopadding {
+                    padding: 0 !important;
+                }
+                .mobile-side {
+                    padding-right: 15px !important;
+                    padding-left: 15px !important;
+                }
+                .mobile-side2 {
+                    padding-right: 25px !important;
+                    padding-left: 25px !important;
+                }
+                .mobile-negmargin {
+                    margin-top: -15px !important;
+                }
+                .mobile-center {
+                    text-align:center !important;
+                }
+                .mobile-unvisible {
+                    display: none!important;
+                } 
+                .mobile-bgcolor-gray {
+                    background-color: #eeeeee !important;
+                }
+                .mb-bg-lightgray{
+                    background-color: #f5f7fa !important; 
+                }
+                .mb-padding-top{
+                    padding-top: 30px !important;
+                }
+                .mobile-visible-block {
+                    display: block !important;
+                }
+                .mobile-low-top-padding {
+                    padding-top: 1px !important;
+                }
+                .mb-font-size{
+                    font-size: 24px !important;
+                }
+            }
+            @media (prefers-color-scheme: dark ) {
+                /* Shows Dark Mode-Only Content, Like Images */
+                
+                .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+                .dark-imglow { display:block !important; width: 100px !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+        
+                /* Hides Light Mode-Only Content, Like Images */
+                .light-img { display:none; display:none !important; }
+   
+                /* Custom Dark Mode Background Color */
+                .darkmodeblack { background-color:#0e0e0e !important; }
+                .darkmodelowblack { background-color: #202020 !important; }
+   
+                /* Custom Dark Mode Font Colors */
+                 h1, h2, p, span, a, b { color: #ffffff !important; }
+                 .darkmodegray { color: #6e6e6e !important; }
+                 .darkblue { color: #029BFE !important; }
+                 .darkcolor-subtext{ color: #c2c2c2 !important; }
+                 .darkcolor-white{ color: #ffffff !important; }
+                 .darkborder{ border-color: #6e6e6e !important; }
+   
+                /* Custom Dark Mode Text Link Color */
+                .link { color: #91ADD4 !important; }
+            } 
+            /* Shows Dark Mode-Only Content, Like Images */
+            [data-ogsc] .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+            [data-ogsc] .dark-imglow { display:block !important; width: 100px !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+            
+            /* Hides Light Mode-Only Content, Like Images */
+            [data-ogsc] .light-img { display:none; display:none !important; }
+  
+            /* Custom Dark Mode Background Color */
+            [data-ogsc] .darkmodeblack { background-color: #0e0e0e !important;}
+            [data-ogsc] .darkmodelowblack { background-color: #202020 !important; }
+  
+            /* Custom Dark Mode Font Colors */
+            [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] a, [data-ogsc] b { color: #ffffff !important; }
+            [data-ogsc] .darkmodegray { color: #6e6e6e !important; }
+            [data-ogsc] .darkblue { color: #029BFE !important; }
+            [data-ogsc] .darkcolor-subtext{ color: #c2c2c2 !important; }
+            [data-ogsc] .darkcolor-white{ color: #ffffff !important; }
+            [data-ogsc] .darkborder{ border-color: #6e6e6e !important; }
+  
+            /* Custom Dark Mode Text Link Color */
+            [data-ogsc] .link { color: #91ADD4 !important; }
+
+            @media (prefers-color-scheme: dark ) and (max-width: 620px)  {
+                .dark-lowwidth-m{ display:block !important;width: 70px !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important;}
+                [data-ogsc].dark-lowwidth-m{ display:block !important;width: 70px !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+            }
+
+        </style>
+    </head>
+    <body style="background-color: #eeeeee; margin: 0 !important; padding: 0 !important;">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">    
+             <!-- Email body -->
+            <tr>
+                <td bgcolor="#eeeeee" align="center" style="padding: 10px 0 0;" class="darkmodelowblack mobile-nopadding">
+                    <!--[if (gte mso 9)|(IE)]>
+                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" ><tr><td align="center" valign="top" width="600" bgcolor="#ffffff">
+                    <![endif]-->
+                    <table  border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff; max-width: 600px;" class="darkmodeblack">
+                        <!-- START HERO -->
+                        <tr>
+                            <td  align="center" style="padding: 30px 30px 20px;" class="darkmodeblack">
+                                <a href="https://xcoins.com/en/">
+                                    <img class="light-img mb-lowwidth" src="https://deriv-static-content-behnaz-fs.vercel.app/email/other/icon/logo.png" width="120" style="display: block;" alt="xcoins.com">
+                                    <div class="dark-imglow" style="display:none; overflow:hidden; float:left; width:0px; max-height:0px; max-width:0px; line-height:0px; visibility:hidden;" align="center">
+                                        <img src="https://deriv-static-content-behnaz-fs.vercel.app/email/other/icon/logo-dark.png" width="120" height="18" class="dark-lowwidth-m" alt="xcoins.com" style="color: #ffffff; font-family:'proxima_nova', Helvetica, Arial, sans-serif; text-align:center; font-weight:bold; font-size:36px; line-height:40px; text-decoration: none; margin: 0 auto; padding: 0;" border="0" />
+                                    </div>                                   
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="padding: 10px 30px; background-color: #fff;" class="mobile-side darkmodeblack">
+                                <p style="font-family: 'Raleway', Arial, sans-serif; font-size: 32px; line-height: 1.5 ; color: #333333; font-weight: 700;margin:0;" class="darkcolor-subtext">Welcome Aboard, Name</p>
+                            </td>
+                        </tr>                        
+                        <tr>
+                            <td bgcolor="#fff" align="center" style="padding: 40px 0;" class="darkmodeblack">
+                                <input type="image" class="g-img mb-width" src="https://deriv-static-content-behnaz-fs.vercel.app/email/other/image/welcome.png"  width= "300" style="display: block;outline:none"/><div></div>
+                            </td>
+                        </tr>   
+                        <!-- END HERO -->
+                        <!-- Start Gray area --> 
+                        <tr>
+                            <td align="left" style="padding: 25px 30px 20px; background-color: #fff;" class="mobile-side darkmodeblack">
+                            <!--[if (gte mso 9)|(IE)]>
+                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="540" ><tr><td align="center" valign="top" width="520" bgcolor="#f5f5f5">
+                            <![endif]-->
+                            <table  border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f5f5f5; max-width: 600px;" class="darkmodelowblack">
+                            <tr>
+                                <td align="left" style="padding: 25px 40px 0;" class="mobile-side darkmodelowblack">
+                                    <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 18px; line-height: 1.5 ; color: #333333; font-weight: 400;margin:0;" class="darkcolor-subtext">Hey name</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" style="padding: 15px 40px 0;" class="mobile-side darkmodelowblack">
+                                    <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 18px; line-height: 1.5 ; color: #333333; font-weight: 400;margin:0;" class="darkcolor-subtext">Thank you for registering with xcoins.com and joining one of the fastest-growing crypto companies in the world. Available in 167 countries, our platform is designed with you in mind, so you, name, can buy and sell cryptocurrencies quickly and securely. </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" style="padding: 25px 40px;" class="mobile-side darkmodelowblack">
+                                    <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 32px; line-height: 1.5 ; color: #029BFE !important; font-weight: 700;margin:0;" class="darkcolor-subtext mb-font-size">Ready to get started?</p>
+                                </td>
+                            </tr>                                    
+                            </table>
+                            <!--[if (gte mso 9)|(IE)]></td></tr></table>
+                            <![endif]-->
+                            </td>
+                        </tr>
+                        <!-- End Gray area -->
+                        <tr>
+                            <td align="left" style="padding: 3px 30px 20px; background-color: #fff;" class="mobile-side darkmodeblack">
+                            <!--[if (gte mso 9)|(IE)]>
+                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="540" ><tr><td align="center" valign="top" width="520" bgcolor="#f5f5f5">
+                            <![endif]-->
+                            <table  border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f5f5f5; max-width: 600px;" class="darkmodelowblack">
+                                <tr>
+                                    <td align="left" style="padding: 20px 60px 15px; background-color: #fff;" class="mobile-side darkmodelowblack">
+                                        <p style="font-family: 'Raleway', Arial, sans-serif; font-size: 32px; line-height: 1.5 ; color: #333333; font-weight: 700;margin:0;" class="darkcolor-subtext mb-font-size">Buy & Sell Crypto</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding: 20px 60px 0; background-color: #fff;" class="mobile-side darkmodelowblack">
+                                        <p style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 1.5 ; color: #333333; font-weight: 700;margin:0;" class="darkcolor-subtext">Time to take the next step on your crypto journey:</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding: 5px 50px; background-color: #fff;" class="mobile-nopadding darkmodelowblack">
+                                        <ul class="darkcolor-subtext">
+                                            <li class="darkcolor-subtext"><p style="font-family: 'IBM Plex Sans', Arial, sans-serif; color: #333333; font-size: 16px; font-weight: 400; line-height: 24px; padding: 3px;margin:0" class="darkcolor-subtext">Log in to your account.</p></li>
+                                            <li class="darkcolor-subtext"><p style="font-family: 'IBM Plex Sans', Arial, sans-serif; color: #333333; font-size: 16px; font-weight: 400; line-height: 24px; padding: 3px;margin:0" class="darkcolor-subtext">Select the crypto and fiat currencies you want to exchange.</p></li>
+                                            <li class="darkcolor-subtext"><p style="font-family: 'IBM Plex Sans', Arial, sans-serif; color: #333333; font-size: 16px; font-weight: 400; line-height: 24px; padding: 3px;margin:0" class="darkcolor-subtext">Enter your wallet address and details of your payment method.</p></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding: 10px 60px; background-color: #fff;" class="mobile-side darkmodelowblack">
+                                        <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 18px; line-height: 1.5 ; color: #333333; font-weight: 400;margin:0;" class="darkcolor-subtext">That’s it! You’ll have your currency within 15 minutes of payment approval!</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#ffffff" align="center" style="padding: 30px;" class="darkmodelowblack">
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://xcoins.com/" style="height:40px;v-text-anchor:middle;width:180px;" arcsize="10%" fillcolor="#029BFE">
+                                        <w:anchorlock/>
+                                        <center style="color:#ffffff;font-family:sans-serif;font-size:14px;font-weight:bold;">GET STARTED</center>
+                                        </v:roundrect>
+                                        <![endif]-->
+                                        <a class="button" href="https://xcoins.com/" style="mso-hide:all;"><span>GET STARTED</span></a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--[if (gte mso 9)|(IE)]></td></tr></table>
+                            <![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 3px 30px 20px; background-color: #fff;" class="mobile-side darkmodeblack">
+                            <!--[if (gte mso 9)|(IE)]>
+                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="540" ><tr><td align="center" valign="top" width="520" bgcolor="#f5f5f5">
+                            <![endif]-->
+                            <table  border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #fff; max-width: 600px;" class="darkmodelowblack">
+                                <tr>
+                                    <td align="left" style="padding: 20px 60px 15px; background-color: #fff;" class="mobile-side darkmodelowblack">
+                                        <p style="font-family: 'Raleway', Arial, sans-serif; font-size: 32px; line-height: 1.5 ; color: #333333; font-weight: 700;margin:0;" class="darkcolor-subtext mb-font-size">Account Protection</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding: 20px 60px 0; background-color: #fff;" class="mobile-side darkmodelowblack">
+                                        <p style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 1.5 ; color: #333333; font-weight: 700;margin:0;" class="darkcolor-subtext">Keep your money and your personal data safe with these security tips:</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding: 5px 50px 0; background-color: #fff;" class="mobile-nopadding darkmodelowblack">
+                                        <ul class="darkcolor-subtext">
+                                            <li class="darkcolor-subtext"><p style="font-family: 'IBM Plex Sans', Arial, sans-serif; color: #333333; font-size: 16px; font-weight: 400; line-height: 24px; padding: 3px;margin:0" class="darkcolor-subtext">Enable Two-Factor Authentication (2FA) on your account.</p></li>
+                                            <li class="darkcolor-subtext"><p style="font-family: 'IBM Plex Sans', Arial, sans-serif; color: #333333; font-size: 16px; font-weight: 400; line-height: 24px; padding: 3px;margin:0" class="darkcolor-subtext">Don’t share your passwords with anyone.</p></li>
+                                            <li class="darkcolor-subtext"><p style="font-family: 'IBM Plex Sans', Arial, sans-serif; color: #333333; font-size: 16px; font-weight: 400; line-height: 24px; padding: 3px;margin:0" class="darkcolor-subtext">Choose a strong password for your xcoins.com account and change it regularly.</p></li>
+                                            <li class="darkcolor-subtext"><p style="font-family: 'IBM Plex Sans', Arial, sans-serif; color: #333333; font-size: 16px; font-weight: 400; line-height: 24px; padding: 3px;margin:0" class="darkcolor-subtext">Beware of scammers. We’ll never ask you for sensitive information such as passwords.</p></li>
+                                            <li class="darkcolor-subtext"><p style="font-family: 'IBM Plex Sans', Arial, sans-serif; color: #333333; font-size: 16px; font-weight: 400; line-height: 24px; padding: 3px;margin:0" class="darkcolor-subtext">Look out for imposter websites. Always make sure you’re on app.xcoins.com.</p></li>                                    
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#ffffff" align="center" style="padding: 30px;" class="darkmodelowblack">
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://xcoins.com/" style="height:40px;v-text-anchor:middle;width:180px;" arcsize="10%" fillcolor="#029BFE">
+                                        <w:anchorlock/>
+                                        <center style="color:#ffffff;font-family:sans-serif;font-size:14px;font-weight:bold;">VERIFY NOW</center>
+                                        </v:roundrect>
+                                        <![endif]-->
+                                        <a class="button" href="https://xcoins.com/" style="mso-hide:all;"><span>VERIFY NOW</span></a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--[if (gte mso 9)|(IE)]></td></tr></table>
+                            <![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="padding: 3px 30px 20px; background-color: #fff;" class="mobile-side darkmodeblack">
+                            <!--[if (gte mso 9)|(IE)]>
+                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="540" ><tr><td align="center" valign="top" width="520" bgcolor="#f5f5f5">
+                            <![endif]-->
+                            <table  border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #fff; max-width: 600px;" class="darkmodelowblack">
+                                <tr>
+                                    <td align="center" style="padding: 20px 60px 10px;" class="mobile-side darkmodelowblack">
+                                        <p style=" border-top: 2px solid #eee;font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 18px; line-height: 1.5 ; color: #333333; font-weight: 400;margin:0;" class="darkborder"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding: 35px 50px 10px; background-color: #fff;" class="mobile-nopadding  mb-padding-top darkmodelowblack">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0px;" class="darkmodeblack">
+                                            <tr> 
+                                                <td width="90" align="right" style="padding:20px;vertical-align: middle;" class="darkmodelowblack">
+                                                    <img src="https://deriv-static-content-behnaz-fs.vercel.app/email/other/icon/24.png"  border="0" style="margin: 0px auto;" alt="1-" width="80" style="display: inlineblock;" >
+                                                </td>
+                                                <td valign="top" class="darkmodelowblack mobile-nopadding" style="padding:0px 10px 0 50px;" >
+                                                    <p style="margin:0;font-family: 'Raleway', Arial, sans-serif; font-size: 20px; line-height: 1.4 ; color: #333333; font-weight: 600;" class="darkcolor-subtext">Have Questions?</p>
+                                                    <p style="margin:8px 0 0;font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.4 ; color: #333333; font-weight: 400;" class="darkcolor-subtext">If you have any questions or need further help, you can contact our Customer Support team, 24/7. We’re available on live chat, by email and by phone. You can also find answers to many of your questions via our FAQs. </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding: 35px 50px 10px; background-color: #fff;" class="mobile-nopadding mb-padding-top darkmodelowblack">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin: 0px;" class="darkmodeblack">
+                                            <tr> 
+                                                <td width="90" align="right" style="padding:20px;vertical-align: middle;" class="darkmodelowblack">
+                                                    <img src="https://deriv-static-content-behnaz-fs.vercel.app/email/other/icon/blog.png"  border="0" style="margin: 0px auto;" alt="1-" width="80" style="display: inlineblock;" >
+                                                </td>
+                                                <td valign="top" class="darkmodelowblack mobile-nopadding" style="padding:0px 10px 0 50px;" >
+                                                    <p style="margin:0;font-family: 'Raleway', Arial, sans-serif; font-size: 20px; line-height: 1.4 ; color: #333333; font-weight: 600;" class="darkcolor-subtext">Xcoins.com Blog</p>
+                                                    <p style="margin:8px 0 0;font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.4 ; color: #333333; font-weight: 400;" class="darkcolor-subtext">For all the latest in crypto news and developments, as well as detailed insights into the world of cryptocurrency, head over to our Blog.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding: 40px 60px 20px;" class="mobile-side darkmodelowblack">
+                                        <p style=" border-top: 2px solid #eee;font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 18px; line-height: 1.5 ; color: #333333; font-weight: 400;margin:0;" class="darkborder"></p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--[if (gte mso 9)|(IE)]></td></tr></table>
+                            <![endif]-->
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]></td></tr></table>
+                    <![endif]-->
+                </td>
+            </tr>   
+            <!-- End Email body-->                                                       
+            <!-- FOOTER -->
+            <tr>
+                <td bgcolor="#eeeeee" align="center" style="padding: 0 0 10px;" class="darkmodelowblack mobile-nopadding">
+                    <!--[if (gte mso 9)|(IE)]>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600" bgcolor="#ffffff">
+                    <![endif]-->
+                    <table bgcolor="#fff" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;" class="darkmodeblack">      
+                        <tr>
+                            <td  align="center" style="padding: 0 30px 20px;" class="darkmodeblack">
+                                <a href="https://xcoins.com/">
+                                    <img class="light-img mb-lowwidth" src="https://deriv-static-content-behnaz-fs.vercel.app/email/other/icon/logo.png" width="100" style="display: block;" alt="xcoins.com">
+                                    <div class="dark-imglow" style="display:none; overflow:hidden; float:left; width:0px; max-height:0px; max-width:0px; line-height:0px; visibility:hidden;" align="center">
+                                        <img src="https://deriv-static-content-behnaz-fs.vercel.app/email/other/icon/logo-dark.png" width="100" height="18" class="dark-lowwidth-m" alt="xcoins.com" style="color: #ffffff; font-family:'proxima_nova', Helvetica, Arial, sans-serif; text-align:center; font-weight:bold; font-size:36px; line-height:40px; text-decoration: none; margin: 0 auto; padding: 0;" border="0" />
+                                    </div>                                   
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="padding: 0 30px 10px; background-color: #fff;" class="mobile-side darkmodeblack">
+                                <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #999; font-weight: 700;margin:0;" class="darkmodegray">- The Xcoins Team -</p>
+                            </td>
+                        </tr>
+                         <!-- Trustpilot -->
+                        <tr>
+                            <td align="center" style="padding: 0px;" class="mobile-side darkmodeblack">
+                            
+                                <a target='_blank' href='https://www.reviews.io/company-reviews/store/xcoins-com1'><img src='https://media.reviews.co.uk/badge/xcoins-com1.png'/></a>
+                            
+                            </td>
+                        </tr>
+                         <!-- Trustpilot -->
+                        <!-- SOCIAL -->
+                        <tr>
+                            <td align="center" style="padding: 5px 20px; color: #ffffff; font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 18px;" class="darkmodeblack">
+                                <p style="margin: 0;">
+                                    <a href="https://www.facebook.com/xcoinsdotcom" style="text-decoration: none;">
+                                        <img src="https://static.deriv.com/email/images/icons/facebook.png" height="32" width="32" alt="xcoins.com on Facebook" title="xcoins.com on Facebook" />
+                                    </a>&nbsp;&nbsp;
+                                    <a href="https://t.me/xcoinsdotcom" style="text-decoration: none;">
+                                        <img src="https://static.deriv.com/email/images/icons/telegram.png" height="32" width="32" alt="xcoind.com on Telegram" title="xcoins.com on Telegram" />
+                                    </a>&nbsp;&nbsp;
+                                    <a href="https://www.instagram.com/xcoins/" style="text-decoration: none;">
+                                        <img src="https://static.deriv.com/email/images/icons/instagram.png" height="32" width="32" alt="xcoins.com on Instagram" title="xcoins.com on Instagram" />
+                                    </a>&nbsp;&nbsp;                                   
+                                    <a href="https://twitter.com/xcoins" style="text-decoration: none;">
+                                        <img src="https://static.deriv.com/email/images/icons/twitter.png" height="32" width="32" alt="xcoins.com on Twitter" title="xcoins.com on Twitter" />
+                                    </a>&nbsp;&nbsp;
+                                    <a href="https://t.me/xcoinsdotcom" style="text-decoration: none;">
+                                        <img src="https://static.deriv.com/email/images/icons/telegram.png" height="32" width="32" alt="xcoind.com on Telegram" title="xcoins.com on Telegram" />
+                                    </a>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#fff" align="center" style="padding: 0 0 30px; color: #646464;font-family: 'IBM Plex Sans', Arial, sans-serif;font-size: 12px;font-weight: 500;line-height: 16px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="darkmodeblack">
+                                <p style="padding: 0px 10px;font-family: 'IBM Plex Sans', Arial, sans-serif; color: #999999; font-size: 12px; font-weight: 400; line-height: 16px; margin: 5px 0px 5px 0px;"><a style="color: #999999;" class="darkmodegray" href="https://xcoins.com/">ُTerms of service</a><span class="darkmodegray">,</span>&nbsp;<a style="color: #999999;" class="darkmodegray" href="https://xcoins.com/">Privacy Policy</a><span class="darkmodegray">,</span>&nbsp;<a style="color: #999999;" class="darkmodegray" href="https://xcoins.com/">Cookies Pollicy</a></p>
+                                <p style="padding: 0 10px;font-family: 'IBM Plex Sans', Arial, sans-serif; color: #999999; font-size: 12px; font-weight: 400; line-height: 16px; margin: 0px 0px 5px 0px;" class="darkmodegray">No longer want to receive these emails? <a href="https://xcoins.com/" style="mso-hide:all; color: #029BFE !important;">Unsubscribe</a></p>
+                            </td>
+                        </tr>                        
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td></tr></table>
+                    <![endif]-->
+                </td>
+            </tr>
+        </table>
+    </body>
+    <!-- end message template -->
+</html>
